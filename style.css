@@ -1,0 +1,149 @@
+#lorastextbox select {
+	height: 30px;
+	padding: 0px 10px 0px 25px;
+	font-size: 1em !important;
+	width: 420px;
+	max-width: 100%;
+	margin: 12px 10px 0px 0px;
+}
+#lorastextbox input[type=range] {
+	width: 420px;
+	max-width: 100%;
+}
+#lorastextbox > div > span {
+	color: var(--body-text-color);
+	margin: 0px 0px 0px 19px;
+	font-size: 1.2em
+}
+#update_loras_list,
+#lorastextbox > a {
+	margin: 17px auto 0px auto;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+}
+#lorastextbox > label > textarea,
+#loras_button {
+	display: none !important;
+}
+#update_loras_list {
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 1.2em!important
+}
+#update_loras_list:hover {
+	color: var(--button-primary-border-color)
+}
+#lorastextbox > div:after {
+	content: "˅" !important;
+	position: relative !important;
+	display: block !important;
+	z-index: 99 !important;
+	font-family: monospace !important;
+	font-size: 1em !important;
+	top: -20px !important;
+	right: -9px !important;
+	color: var(--button-secondary-text-color);
+	width: 0px;
+	height: 0px;
+}
+@media (max-width: 1896px) {
+	#lorastextbox select {
+		width: 390px;
+	}
+	#lorastextbox input[type=range] {
+		width: 378px;
+	}
+}
+@media (max-width: 1752px) {
+	#lorastextbox select {
+		width: 368px;
+	}
+	#lorastextbox input[type=range] {
+		width: 360px;
+	}
+}
+@media (max-width: 1752px) {
+	#lorastextbox select {
+		width: 368px;
+	}
+	#lorastextbox input[type=range] {
+		width: 360px;
+	}
+}
+@media (max-width: 1672px) {
+	#lorastextbox select {
+		width: 336px;
+	}
+	#lorastextbox input[type=range] {
+		width: 336px;
+	}
+}
+@media (max-width: 1560px) {
+	#lorastextbox select {
+		width: 300px;
+	}
+	#lorastextbox input[type=range] {
+		width: 300px;
+	}
+}
+@media (max-width: 1560px) {
+	#lorastextbox select {
+		width: 300px;
+	}
+	#lorastextbox input[type=range] {
+		width: 300px;
+	}
+}
+@media (max-width: 1418px) {
+	#lorastextbox select {
+		width: 275px;
+	}
+	#lorastextbox input[type=range] {
+		width: 275px;
+	}
+}
+@media (max-width: 1265px) {
+	#lorastextbox select {
+		width: 265px;
+	}
+	#lorastextbox input[type=range] {
+		width: 238px;
+	}
+}
+@media (max-width: 1265px) {
+	#lorastextbox select {
+		width: 265px;
+	}
+	#lorastextbox input[type=range] {
+		width: 238px;
+	}
+}
+@media (max-width: 1221px) {
+	#lorastextbox select {
+		width: 90%;
+	}
+	#lorastextbox input[type=range] {
+		width: 90%;
+		margin-top: 17px;
+	}
+	#lorastextbox > div:after {
+		top: -53px !important;
+		right: -9px !important;
+	}
+}
+@media (max-width: 358px) {
+	#lorastextbox select {
+		width: 80%;
+	}
+	#lorastextbox input[type=range] {
+		width: 80%;
+		margin-top: 17px;
+	}
+	#lorastextbox > div:after {
+		top: -53px !important;
+		right: -9px !important;
+	}
+}
