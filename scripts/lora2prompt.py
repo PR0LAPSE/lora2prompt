@@ -10,7 +10,7 @@ class ExtensionTemplateScript(scripts.Script):
         def show(self, is_img2img):
                 return scripts.AlwaysVisible
         def ui(self, is_img2img):
-                with gr.Accordion('лоры в промпт', elem_id="loras_txt2img", open=True):
+                with gr.Accordion('лоры в промпт', elem_id="loras_txt2img", open=False):
                         def run():
                             loras_files = [os.path.splitext(os.path.basename(file))[0] for file in os.listdir(loras_folder_path)]
                             return '\n'.join(loras_files)
