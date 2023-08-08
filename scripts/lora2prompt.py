@@ -13,8 +13,7 @@ class ExtensionTemplateScript(scripts.Script):
                 with gr.Accordion('лоры в промпт', elem_id="loras_txt2img", open=True):
                         def run():
                             loras_files = [os.path.splitext(os.path.basename(file))[0] for file in os.listdir(loras_folder_path)]
-                            lycoris_files = [os.path.splitext(os.path.basename(file))[0] for file in os.listdir(lycoris_folder_path)]
-                            return '\n'.join(loras_files + lycoris_files)
+                            return '\n'.join(loras_files)
                         lorastextbox = gr.Textbox(label="", lines=10, elem_id="lorastextbox")
                         loras_button = gr.Button("обновить список лор", elem_id="loras_button")
                         loras_button.click(fn=run, outputs=lorastextbox)
